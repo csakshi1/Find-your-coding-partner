@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign In Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+    <style>
+        /* Default Button Style */
+        .login-btn {
+            background-color: #7610eb; /* Blue */
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Hover Effect */
+        .login-btn:hover {
+            background-color: #0056b3; /* Darker blue */
+            transform: scale(1.1); /* Slightly increase size */
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="container">
+    <h2>Welcome!</h2>
+    <h3>FIND YOUR CODING PARTNER</h3>
+    <div class="image-container">
+        <img src="B193.jpg" alt="Right Side Image" >
+    </div>
+    <button class="login-btn" onclick="login()">Login</button><br>
+    <button class="login-btn" onclick="showSignUp()">Sign In</button>
+
+    <!-- login In Form -->
+    <div id="login-form" class="form-container">
+        <h3>Login</h3>
+        <input type="email" class="input-field" placeholder="Email Address"><br>
+        <input type="password" id="password" class="input-field" placeholder="Password"><br>
+        <button>Submit</button>
+
+    </div>
+
+    <!-- Sign In Form--> 
+    <div id="signup-form" class="form-container">
+        <h3>Sign In</h3>
+        <input type="text" class="input-field" placeholder="Name"><br>
+        <input type="email" class="input-field" placeholder="Email Address"><br>
+        <input type="text" class="input-field" placeholder="Address"><br>
+        <input type="password" id="password" class="input-field" placeholder="Password">
+        <span class="eye-icon" onclick="togglepassword()">
+            👁️
+        </span>
+        <button type="submit">Submit</button>
+    </div>
+    </div>
+    <script>
+         function login() {
+            document.getElementById("login-form").style.display = "block";
+            document.getElementById("signup-form").style.display = "none";
+        }
+        function showSignUp() {
+            document.getElementById("signup-form").style.display = "block";
+            document.getElementById("login-form").style.display = "none";
+        }
+        
+    </script>
+    
+   
+</body>
+</html>

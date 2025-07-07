@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+.form-container {
+    display: none;
+    margin-top: 20px;
+}
+.input-field {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 80%;
+    max-width: 300px;
+}
+.container {
+    background: linear-gradient(#a619f8, #00f2fe);
+    height: 100vh;  /* Full screen height */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    text-align: center; /* Center everything */
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    width: 100%; /* Full width */
+    text-align: center;
+    margin-bottom: 10px; /* Space between image and form */
+}
+
+.image-container img {
+    width: 300px; /* Adjust size */
+    height: auto; /* Adjust size */
+}
+
